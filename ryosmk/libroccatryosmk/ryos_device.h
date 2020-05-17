@@ -22,9 +22,7 @@
 
 G_BEGIN_DECLS
 
-enum {
-	RYOS_WRITE_CHECK_WAIT_LIGHT_CONTROL = 10,
-} RyosWriteCheckWait;
+#define RYOS_WRITE_CHECK_WAIT_LIGHT_CONTROL 10
 
 /*
  * write selection: (before profile specific read)
