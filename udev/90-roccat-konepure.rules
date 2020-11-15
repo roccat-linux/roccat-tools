@@ -2,5 +2,5 @@
 # These rules have to be applied after 50-udev-default.rules for mode changes not to be overridden.
 # If group roccat does not exist, group root is used.
 
-SUBSYSTEM=="input", KERNEL=="event[0-9]*", ACTION=="add", ATTRS{idVendor}=="1e7d", ATTRS{idProduct}=="2dbe", GROUP="roccat", MODE="0660"
-SUBSYSTEM=="hidraw", KERNEL=="hidraw*", ACTION=="add", ATTRS{idVendor}=="1e7d", ATTRS{idProduct}=="2dbe", GROUP="roccat", MODE="0660"
+SUBSYSTEM=="input", KERNEL=="event[0-9]*", ACTION=="add", ATTRS{idVendor}=="1e7d", ATTRS{idProduct}=="2dbe|2dcd", GROUP="roccat", MODE="0660"
+SUBSYSTEM=="hidraw", KERNEL=="hidraw*", ACTION=="add", ATTRS{idVendor}=="1e7d", ATTRS{idProduct}=="2dbe|2dcd", GROUP="roccat", MODE="0660"

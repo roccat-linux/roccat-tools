@@ -18,7 +18,11 @@
 #include "konepure.h"
 #include "roccat.h"
 
-static guint const device_ids[2] = { USB_DEVICE_ID_ROCCAT_KONEPURE, 0 };
+static guint const device_ids[3] = {
+	USB_DEVICE_ID_ROCCAT_KONEPURE,
+	USB_DEVICE_ID_ROCCAT_KONEPURE_OWLEYE,
+	0
+};
 
 RoccatDevice *konepure_device_first(void) {
 	return roccat_device_first(device_ids);

@@ -24,6 +24,7 @@
 G_BEGIN_DECLS
 
 #define USB_DEVICE_ID_ROCCAT_KONEPURE 0x2dbe
+#define USB_DEVICE_ID_ROCCAT_KONEPURE_OWLEYE 0x2dcd
 
 typedef struct _KonepureProfileSettings KonepureProfileSettings;
 typedef struct _KonepureProfileButtons KonepureProfileButtons;
@@ -148,6 +149,7 @@ gboolean konepure_dbus_emit_configuration_changed_outside(DBusGProxy *proxy);
 #define KONEPURE_DBUS_SERVER_INTERFACE "org.roccat.Konepure"
 
 #define KONEPURE_DEVICE_NAME "Kone Pure"
+#define KONEPURE_OWLEYE_DEVICE_NAME "Kone Pure OwlEye"
 
 G_END_DECLS
 
